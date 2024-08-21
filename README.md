@@ -11,7 +11,10 @@
 ## The Buttons
 
 FIGHT
-![fight1](https://github.com/user-attachments/assets/728b4a35-6683-443d-9521-dd75563840a8) ![fight2](https://github.com/user-attachments/assets/c5f48baa-9cd2-4aa0-b3d0-577a4d40ef31)
+
+![fight1](https://github.com/user-attachments/assets/539fd957-a0b9-431b-9d6b-9c9a50c61b20) ![fight2](https://github.com/user-attachments/assets/0713c148-d259-47be-91f7-1ad278d961c9)
+
+
 
 
 
