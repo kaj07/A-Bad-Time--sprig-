@@ -33,6 +33,8 @@ MERCY
 ![mercy1](https://github.com/user-attachments/assets/adccff0e-ccf9-4a9d-8fb4-5f0974b69737)![mercy2](https://github.com/user-attachments/assets/08c60dcd-5859-4398-9d6f-4914e86f0bb9)
 
 
+(images are blurry due to a resizing website I used)
+
 
 
 
