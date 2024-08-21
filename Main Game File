@@ -1,7 +1,4 @@
 /*
-First time? Check out the tutorial game:
-https://sprig.hackclub.com/gallery/getting_started
-
 @title: A Bad Time
 @author: kaj07
 @tags: []
@@ -19,6 +16,7 @@ const item2 = "i"
 const mercy1 = "M"
 const mercy2 = "m"
 const barrier = "b"
+const selectorBarrier = "S"
 const background = "B"
 
 setLegend(
@@ -209,6 +207,23 @@ setLegend(
 2222222222222222
 2222222222222222
 2222222222222222`],
+  [ selectorBarrier, bitmap `
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000` ],
   [ background, bitmap `
 0000000000000000
 0000000000000000
@@ -242,7 +257,7 @@ const levels = [
 .b.........b.
 .bbbbbbbbbbb.
 .............
-sFf.Aa.Ii.Mm.
+sFf.Aa.Ii.MmS
 .............`
 ]
 
@@ -250,22 +265,32 @@ setMap(levels[level])
 
 setBackground(background)
 
+setSolids([selectorBarrier]);
+
+onInput("a", () => {
+  getFirst(selector).x -= 3;
+});
+
+onInput("d", () => {
+  getFirst(selector).x += 3;
+});
+
+// will use the following later for player
+
+/*
 onInput("w", () => {
-  // Move the player sprite up by reducing its y coordinate
   getFirst(player).y -= 1;
 });
 
 onInput("a", () => {
-  // Move the player sprite left by reducing its x coordinate
   getFirst(player).x -= 1;
 });
 
 onInput("s", () => {
-  // Move the player sprite down by increasing its y coordinate
   getFirst(player).y += 1;
 });
 
 onInput("d", () => {
-  // Move the player sprite right by increasing its x coordinate
   getFirst(player).x += 1;
 });
+*/
