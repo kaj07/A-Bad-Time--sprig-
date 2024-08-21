@@ -39,6 +39,23 @@ setLegend(
 ....33333333....
 ....33333333....
 ......3333......` ],
+  [ selector, bitmap `
+................
+................
+................
+....33....33....
+...3333..3333...
+..333333333333..
+..333333333333..
+..333333333333..
+...3333333333...
+....33333333....
+.....333333.....
+......3333......
+.......33.......
+................
+................
+................` ],
   [ fight1, bitmap `
 9999999999999999
 9999999999999999
@@ -216,29 +233,39 @@ setSolids([])
 let level = 0
 const levels = [
   map`
-BBBBBBBBBBBBB
-BbbbbbbbbbbbB
-BbBBBBBBBBBbB
-BbBBBBBBBBBbB
-BbBBBBpBBBBbB
-BbBBBBBBBBBbB
-BbBBBBBBBBBbB
-BbbbbbbbbbbbB
-BBBBBBBBBBBBB
-BFfBAaBIiBMmB
-BBBBBBBBBBBBB`
+.............
+.bbbbbbbbbbb.
+.b.........b.
+.b.........b.
+.b....p....b.
+.b.........b.
+.b.........b.
+.bbbbbbbbbbb.
+.............
+sFf.Aa.Ii.Mm.
+.............`
 ]
 
 setMap(levels[level])
 
-setPushables({
-  [ player ]: []
-})
+setBackground(background)
+
+onInput("w", () => {
+  // Move the player sprite up by reducing its y coordinate
+  getFirst(player).y -= 1;
+});
+
+onInput("a", () => {
+  // Move the player sprite left by reducing its x coordinate
+  getFirst(player).x -= 1;
+});
 
 onInput("s", () => {
-  getFirst(player).y += 1
-})
+  // Move the player sprite down by increasing its y coordinate
+  getFirst(player).y += 1;
+});
 
-afterInput(() => {
-  
-})
+onInput("d", () => {
+  // Move the player sprite right by increasing its x coordinate
+  getFirst(player).x += 1;
+});
