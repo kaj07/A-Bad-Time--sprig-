@@ -37,6 +37,8 @@ MERCY
 
 (images are blurry due to a resizing website I used)
 
+-- on hold as I orginally started this game for the Sprig, however I don't think it's original enough and I have a better idea instead. May revisit this in the future --
+
 
 
 
