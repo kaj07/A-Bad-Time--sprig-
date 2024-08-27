@@ -1,7 +1,7 @@
 # A Bad Time (sprig)
  Mini version of the Sans fight from Undertale created for the Sprig!
 
- Find the game here: https://sprig.hackclub.com/share/4nzhIB1zCL42Lxz3Gy4X
+ Find the game here: [https://sprig.hackclub.com/share/4nzhIB1zCL42Lxz3Gy4X](https://sprig.hackclub.com/share/6E2VCnj8UZwxDHYqKci7)
 
  - This is a super simple version, trying to recreate designs using the following reference image;
 
